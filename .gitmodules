@@ -1,0 +1,3 @@
+[submodule "sndata-converter"]
+	path = sndata-converter
+	url = https://github.com/Longestboi/sndata-converter
