@@ -7,3 +7,6 @@
 [submodule "ps2/ghidra-emotionengine"]
 	path = ps2/ghidra-emotionengine
 	url = https://github.com/beardypig/ghidra-emotionengine
+[submodule "ps2/sndata-converter"]
+	path = ps2/sndata-converter
+	url = https://github.com/Longestboi/sndata-converter
