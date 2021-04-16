@@ -1,3 +1,9 @@
-[submodule "sndata-converter"]
-	path = sndata-converter
-	url = https://github.com/Longestboi/sndata-converter
+[submodule "ghidra-dark"]
+	path = ghidra-dark
+	url = https://github.com/zackelia/ghidra-dark
+[submodule "xbox/ghidra-xbe"]
+	path = xbox/ghidra-xbe
+	url = https://github.com/mborgerson/ghidra-xbe
+[submodule "ps2/ghidra-emotionengine"]
+	path = ps2/ghidra-emotionengine
+	url = https://github.com/beardypig/ghidra-emotionengine
