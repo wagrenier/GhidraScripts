@@ -17,7 +17,7 @@ project = state.getProject()
 currentProgram = state.getCurrentProgram()
 
 
-def ExportArrayData(address, data_size, array_size, filename): 
+def ExportArrayData(address, data_size, array_size, filename, use_index=False): 
     curr_address = int(address, 16)
     dic = {}
 
@@ -28,8 +28,12 @@ def ExportArrayData(address, data_size, array_size, filename):
         num = 0x0
         for i in range(0, len(data_bytes)):
             num |= (data_bytes[i] << (i * 8))
-    
-        dic[hex(curr_address)] = num
+
+        if use_index:
+            dic[index] = num
+        else:
+            dic[hex(curr_address)] = num
+        
         curr_address += data_size
 
     file = open(filename, 'w')
@@ -37,4 +41,4 @@ def ExportArrayData(address, data_size, array_size, filename):
     file.close
 
 
-ExportArrayData('0x002f30b8', 0x4, 12609, 'C:\Users\willi\\cd_dat_tbl.json')
+ExportArrayData('002ff5c0', 0x1, 2624, 'D:\\Programming\\Git\\Github\\FatalStack\\ReverseData\\Python Scirpts\\FileIO\\file_ext_tbl.json')
